@@ -7,7 +7,8 @@ import React, {
 function ViewOrder(){
 const [pizzaData, setPizzaData] = useState([]);
 useEffect(() => {
-    fetch("https://order-pizza-api.herokuapp.com/api/orders")
+  
+  fetch("https://order-pizza-api.herokuapp.com/api/orders")
 .then((response) => { console.log (response.json)
   response.json()
 .then((result) =>{
@@ -15,7 +16,7 @@ useEffect(() => {
     setPizzaData(result)
 })
 })
-  },[]) 
+  },[])
 return(
 <>
 {pizzaData.map((item) =>(

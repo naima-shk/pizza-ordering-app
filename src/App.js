@@ -31,7 +31,7 @@ function App() {
 
               <img src={logo} alt='logo' />
               <Nav className="me-auto">
-                <Nav.Link as={Link} to='./Start'>Start here</Nav.Link>
+                <Nav.Link as={Link} to='/Start'>Start here</Nav.Link>
 
               </Nav>
             </Container>
