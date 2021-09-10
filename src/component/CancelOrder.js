@@ -27,7 +27,7 @@ function CancelOrder() {
 
     fetch(`https://order-pizza-api.herokuapp.com/api/orders/${Order_ID}`, requestOptions)
     .then(response => {
-        if (response.status == 200) {
+        if (response.status === 200) {
             alert('Cancelled successfully')
         }
         window.location.reload();
