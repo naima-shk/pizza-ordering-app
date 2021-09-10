@@ -30,7 +30,7 @@ function PlaceOrder(props){
         "Flavor": flavor,
         "Crust": crust,
         "Size": size,
-        //"Table_No": 9,
+        "Table_No": 9,
       }
       let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzExNzIzMTUsIm5iZiI6MTYzMTE3MjMxNSwianRpIjoiMzg4YzJkMGItMjgxNi00YmNkLWE0MWQtYzE0Mzc2ZTBlOWNmIiwiZXhwIjoxNjMxMTczMjE1LCJpZGVudGl0eSI6InRlc3QiLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.77X_XlDzeM4Qs54Xsbh2Gk7x6aB5KPdelWn9yxHj_q4";
   
