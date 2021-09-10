@@ -68,7 +68,7 @@ function CancelOrder() {
               
               <div className="d-grid gap-2">
               <Button variant="danger" size="lg" onClick={() => onClickCancel(v.Order_ID)}>
-        Cancel Order
+        Cancel  Order
         </Button>
               <br />
               <br />

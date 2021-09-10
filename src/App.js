@@ -24,10 +24,10 @@ function App() {
   return (
     <>
       <Router>
-        <div>
+        <div className='pizza'>
           <Navbar bg="danger" variant="dark">
             <Container>
-              <Navbar.Brand href="#home">Pizza House</Navbar.Brand>
+              <Navbar.Brand href="#home" >Pizza House</Navbar.Brand>
                <img src={logo} alt='logo' />
               <Nav className="me-auto">
                 <Nav.Link as={Link} to='/Start'>Start Here</Nav.Link>

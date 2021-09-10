@@ -1,10 +1,12 @@
 body{
-  background: URL('page1.jfif');
+  background: URL('bg.jpg');
+  font-family: 'Courier New', Courier, monospace;
   }
   .d-grid{
     padding-top: 78px;
     margin-left: 420px;
     margin-right: 420px;
+    font-family: 'Courier New', Courier, monospace;
   }
   img{
     margin:3px;
@@ -15,11 +17,15 @@ body{
      height:auto;
   
   }
-  h2{
+  /*h2{
     margin-right: 70px;
     padding-right: 60px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
+  }*/
+  .pizza{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
   }
   /**{
     margin:0;

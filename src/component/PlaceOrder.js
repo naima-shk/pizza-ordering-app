@@ -56,20 +56,20 @@ fetch(`https://order-pizza-api.herokuapp.com/api/orders`, requestOptions)
   return(
     <>
     <h3>PlaceOrder</h3>
-    <div className="d-grid gap-1">
-    <label for="pizza">Crust:</label>
+    <div className="d-grid gap-2">
+    <label for="pizza" style={{color:'white', fontWeight:'bold', fontSize:'300'}}>Crust:</label>
       <select name="crust" onChange={onChangeCrust}>
         <option value="STUFFED" >Stuffed</option>
         <option value="CRACKER">Cracker</option>
         <option value="THIN">Thin</option>
       </select>
-      <label for="flavor">Flavor:</label>
+      <label for="flavor" style={{color:'white', fontWeight:'bold',fontSize:'300'}}>Flavor:</label>
       <select name="flavor" onChange={onChangeFlavor}>
         <option value="FAJITA" >Fajita</option>
         <option value="CHEESE">Cheese</option>
         <option value="VEGGIE">Veggie</option>
       </select>
-      <label for="size">Size:</label>
+      <label for="size" style={{color:'white', fontWeight:'bold',fontSize:'300'}}>Size:</label>
       <select name="size" onChange={onChangeSize}>
         <option value="S" >Small</option>
         <option value="M">Medium</option>
