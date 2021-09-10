@@ -14,7 +14,7 @@ import {
 } from 'react-router-dom';
 
 import CancelOrder from './component/CancelOrder';
-import logo from './component/logo.PNG';
+import logo from './component/logo.png';
 import PlaceOrder from './component/PlaceOrder';
 import Start from './component/Start';
 //import Home from './component/Home';
@@ -28,13 +28,14 @@ function App() {
           <Navbar bg="danger" variant="dark">
             <Container>
               <Navbar.Brand href="#home">Pizza House</Navbar.Brand>
-
-              <img src={logo} alt='logo' />
+               <img src={logo} alt='logo' />
               <Nav className="me-auto">
-                <Nav.Link as={Link} to='/Start'>Start here</Nav.Link>
-
+                <Nav.Link as={Link} to='/Start'>Start Here</Nav.Link>
+               
               </Nav>
+              <h2>Read to order you favourite pizza!!</h2>
             </Container>
+           
           </Navbar>
         </div>
         {/* A <Switch> looks through its children <Route>s and

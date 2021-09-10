@@ -9,13 +9,18 @@ body{
   img{
     margin:3px;
     padding: .5px;
-    width:10%;
-     border-radius: 20px;
+    width:7%;
+     border-radius: 18px;
      position: relative;
      height:auto;
   
   }
-  
+  h2{
+    margin-right: 70px;
+    padding-right: 60px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  }
   /**{
     margin:0;
     padding: 0;
