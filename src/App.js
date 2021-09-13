@@ -22,7 +22,7 @@ import ViewOrder from './component/ViewOrder';
 
 function App() {
   return (
-    <>
+   
       <Router>
         <div className='pizza'>
           <Navbar bg="danger" variant="dark">
@@ -60,7 +60,7 @@ function App() {
 
       </Router>
 
-    </>
+  
   );
 }
 export default App;

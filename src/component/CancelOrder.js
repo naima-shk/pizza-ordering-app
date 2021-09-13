@@ -49,7 +49,7 @@ function CancelOrder() {
  return (
   <>
   <div>
-  <h3 style={{marginLeft:'39%', marginBottom: '11%', color: 'white'}}>Cancel Orders List</h3>
+  <h3>Cancel Orders List</h3>
             <Table striped bordered hover variant="warning" style={tablestyle}>
                 <thead>
                     <tr>

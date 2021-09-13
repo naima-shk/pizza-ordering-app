@@ -32,7 +32,7 @@ function PlaceOrder(props){
         "Size": size,
         "Table_No": 9,
       }
-      let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzExNzIzMTUsIm5iZiI6MTYzMTE3MjMxNSwianRpIjoiMzg4YzJkMGItMjgxNi00YmNkLWE0MWQtYzE0Mzc2ZTBlOWNmIiwiZXhwIjoxNjMxMTczMjE1LCJpZGVudGl0eSI6InRlc3QiLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.77X_XlDzeM4Qs54Xsbh2Gk7x6aB5KPdelWn9yxHj_q4";
+      const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzExNzIzMTUsIm5iZiI6MTYzMTE3MjMxNSwianRpIjoiMzg4YzJkMGItMjgxNi00YmNkLWE0MWQtYzE0Mzc2ZTBlOWNmIiwiZXhwIjoxNjMxMTczMjE1LCJpZGVudGl0eSI6InRlc3QiLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.77X_XlDzeM4Qs54Xsbh2Gk7x6aB5KPdelWn9yxHj_q4";
   
   const requestOptions = {
     method: 'POST',
@@ -57,19 +57,19 @@ fetch(`https://order-pizza-api.herokuapp.com/api/orders`, requestOptions)
     <>
     <h3>PlaceOrder</h3>
     <div className="d-grid gap-2">
-    <label for="pizza" style={{color:'white', fontWeight:'bold', fontSize:'300'}}>Crust:</label>
+    <label for="pizza" >Crust:</label>
       <select name="crust" onChange={onChangeCrust}>
         <option value="STUFFED" >Stuffed</option>
         <option value="CRACKER">Cracker</option>
         <option value="THIN">Thin</option>
       </select>
-      <label for="flavor" style={{color:'white', fontWeight:'bold',fontSize:'300'}}>Flavor:</label>
+      <label for="flavor" >Flavor:</label>
       <select name="flavor" onChange={onChangeFlavor}>
         <option value="FAJITA" >Fajita</option>
         <option value="CHEESE">Cheese</option>
         <option value="VEGGIE">Veggie</option>
       </select>
-      <label for="size" style={{color:'white', fontWeight:'bold',fontSize:'300'}}>Size:</label>
+      <label for="size" >Size:</label>
       <select name="size" onChange={onChangeSize}>
         <option value="S" >Small</option>
         <option value="M">Medium</option>
@@ -79,8 +79,8 @@ fetch(`https://order-pizza-api.herokuapp.com/api/orders`, requestOptions)
       <div className="d-grid gap-1">
       <Button  variant="danger" size="lg" onClick={handleClick}>Click here</Button>
       </div>
-      
-    </>
+      </>
+    
   )
 }
 export default PlaceOrder;

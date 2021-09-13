@@ -1,5 +1,5 @@
 body{
-  background: URL('bg.jpg');
+  background: URL('../public/images/bg.jpg');
   font-family: 'Courier New', Courier, monospace;
   }
   .d-grid{
@@ -27,106 +27,21 @@ body{
     font-family: 'Courier New', Courier, monospace;
     color: white;
   }
-  /**{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+  label{
+    color:'white';
+     font-weight:'bold'; 
+     font-size:'300';
   }
-  body{
-  background: URL('page1.jfif');
+  .card-body{
+    color:'white';
+     background-color:'#df3636';
+     margin-left:'100%';
+      padding-left:'16px';
+       margin-bottom:'3px';
+       display:'inline-block';
   }
-  
-  /*.banner{
-    width:100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-  
+  h3{
+    margin-left:'39%';
+     margin-bottom: '11%';
+      color: 'white';
   }
-  
-  .banner-text h1{
-    display: flex;
-    height: 60px;
-    align-items: center;
-    margin-top: 100px;
-    width: 1100px;
-    padding:4px;
-    color: white;
-  }
-  
-  .logo img{
-    margin:9px;
-    padding: 2px;
-    width:12%;
-     border-radius: 25px;
-     position: relative;
-  
-  }
-  
-  .btn{
-    text-decoration: none;
-    border-radius: 30px;
-    color:#df3636;
-    border:none;
-    text-emphasis-color: white;
-    margin-left: 9%;
-    padding-left: 10px;
-    justify-content: center;
-    align-content: center;
-    width: 32%;
-    height: 6vh;
-    margin-top: 5%;
-    font-size: 27px;
-  
-  
-  }
-  
-  .container-1{
-    text-align: center;
-    color:white;
-   height: 15vh;
-   width: auto;
-    background-color: #df3636;
-  }
-  
-  .orderbutton{
-    display: grid;
-    margin-left: 32%;
-    padding-left: 10px;
-    align-items: center;
-    color: black;
-    text-emphasis-color:#df3636;
-  
-  }
-  
-  .container-2  {
-    text-align: center;
-    color:white;
-   height: 30vh;
-    background-color: #df3636;
-  }
-  h2{
-     text-align: center;
-     display: block;
-  }
-  
-  .container-3  {
-    text-align: center;
-    color:white;
-   height: 63vh;
-    background-color: #df3636;
-  
-  }
-  .center{
-     margin-left: 10px;
-     background-color: #df3636;
-     margin-bottom: 9px;
-     display: grid;
-  }
-  
-  .form{
-    margin: .5rem;
-    padding:.5rem;
-  }*/
-  

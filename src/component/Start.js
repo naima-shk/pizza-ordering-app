@@ -6,7 +6,7 @@ import { useHistory } from 'react-router';
 function Start(){
   let history =useHistory();
     return(
-    <>
+    
     <div className="d-grid gap-2">
   <Button variant="danger" size="lg" onClick={()=>history.push('./ViewOrder')}>
     View Order
@@ -18,7 +18,7 @@ function Start(){
     Cancel Order
   </Button>
 </div>
-    </>
+    
   )
 }
 export default Start;

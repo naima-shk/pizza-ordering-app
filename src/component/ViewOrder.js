@@ -22,8 +22,7 @@ return(
 {pizzaData.map((item) =>(
   <div>
     
-      <div className="card-body" style={{color:'white', backgroundColor:'#df3636',marginLeft:'100%', paddingLeft:'16px', marginBottom:'3px',display:'inline-block'}}>
-       
+      <div className="card-body" >
         
         <h2 className='card-name'>Crust: {item.Crust} </h2>
         <h2 className='card-type'>Flavour: {item.Flavour} </h2>
