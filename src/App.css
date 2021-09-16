@@ -55,15 +55,15 @@ body{
     margin-bottom: '11%';
     color: 'white';
   }
-  /*.placeOrder{
+  .placeOrder{
     margin:'100%';
     padding:'16%';
     justify-content: center;
-  }*/
+  }
   /*.cancel-card{
     color: black;
   }*/
-  card{
+  /*card{
     margin-left:'100%';
     padding-left:'160%';
-  }
+  }*/
