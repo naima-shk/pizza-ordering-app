@@ -3,12 +3,9 @@ import React, {
   useState,
 } from 'react';
 
-import {
-  Button,
-  Table,
-} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
-const tablestyle = {
+/*const tablestyle = {
   backgroundColor: '#00000059',
   width: "60rem",
   opacity: '0.6',
@@ -16,7 +13,7 @@ const tablestyle = {
   color:'black',
   boxShadow: '0 0 20px 0 white'
 
-};
+};*/
 function CancelOrder() {
   const [orders,setOrders] = useState([]);
   useEffect(() => {
@@ -50,31 +47,31 @@ function CancelOrder() {
   <>
   <div>
   <h3>Cancel Orders List</h3>
-            <Table striped bordered hover variant="warning" style={tablestyle}>
-                <thead>
-                    <tr>
-                        <th>Order ID#</th>
-                        <th>Crust</th>
-                        <th>Flavour</th>
-                        <th>Size</th>
-                        </tr>
-                        </thead>
-                        </Table>
+  
+            
     {orders.map((v,i) => {
-    return <div key={i}>
+
+    return    <div  key={i}>
+    
               <div>{v.Crust}</div>
               <div>{v.Flavor}</div>
               <div>{v.Size}</div>
-              
               <div className="d-grid gap-2">
-              <Button variant="danger" size="lg" onClick={() => onClickCancel(v.Order_ID)}>
+              <Button variant="danger" size="lg" onClick={ onClickCancel}>
         Cancel  Order
         </Button>
+        </div>
               <br />
               <br />
+              
+          
+           
            </div>
-           </div>})}
-  </div>
+          
+           })}
+ 
+ </div>
+  
   </>
 );
 }

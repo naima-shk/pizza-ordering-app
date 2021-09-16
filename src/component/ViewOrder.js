@@ -4,6 +4,8 @@ import React, {
   useState,
 } from 'react';
 
+import { Card } from 'react-bootstrap';
+
 function ViewOrder(){
 const [pizzaData, setPizzaData] = useState([]);
 useEffect(() => {
@@ -20,9 +22,10 @@ useEffect(() => {
 return(
 <>
 {pizzaData.map((item) =>(
-  <div>
+  <div className="card-body">
     
-      <div className="card-body" >
+    <Card>
+      <div  >
         
         <h2 className='card-name'>Crust: {item.Crust} </h2>
         <h2 className='card-type'>Flavour: {item.Flavour} </h2>
@@ -32,7 +35,7 @@ return(
        
       </div>
 
-      
+      </Card>
       </div>
 ))}
 </>

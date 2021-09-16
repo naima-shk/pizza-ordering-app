@@ -1,5 +1,6 @@
 body{
-  background: URL('../public/images/bg.jpg');
+
+  background: URL('./assets/bg.jpg');
   font-family: 'Courier New', Courier, monospace;
   }
   .d-grid{
@@ -7,6 +8,7 @@ body{
     margin-left: 420px;
     margin-right: 420px;
     font-family: 'Courier New', Courier, monospace;
+   
   }
   img{
     margin:3px;
@@ -17,6 +19,15 @@ body{
      height:auto;
   
   }
+  /*.logo{
+    margin:3px;
+    padding: .5px;
+    width:7%;
+    border-radius: 18px;
+    position: relative;
+    height:auto;
+  
+  }*/
   /*h2{
     margin-right: 70px;
     padding-right: 60px;
@@ -27,21 +38,32 @@ body{
     font-family: 'Courier New', Courier, monospace;
     color: white;
   }
-  label{
+  /*label{
     color:'white';
-     font-weight:'bold'; 
-     font-size:'300';
-  }
+    font-weight:'bold'; 
+    font-size:'300';
+  }*/
   .card-body{
-    color:'white';
-     background-color:'#df3636';
-     margin-left:'100%';
-      padding-left:'16px';
-       margin-bottom:'3px';
-       display:'inline-block';
+   
+    color:'#df3636';
+   
+    display:'inline';
+    text-align: center;
   }
   h3{
     margin-left:'39%';
-     margin-bottom: '11%';
-      color: 'white';
+    margin-bottom: '11%';
+    color: 'white';
+  }
+  /*.placeOrder{
+    margin:'100%';
+    padding:'16%';
+    justify-content: center;
+  }*/
+  /*.cancel-card{
+    color: black;
+  }*/
+  card{
+    margin-left:'100%';
+    padding-left:'160%';
   }

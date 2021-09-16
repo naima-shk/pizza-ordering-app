@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-import { Button } from 'react-bootstrap';
+import {
+  Button,
+  Card,
+  Form,
+} from 'react-bootstrap';
 
 function PlaceOrder(props){
   const [crust, setCrust] = useState('');
@@ -56,33 +60,53 @@ fetch(`https://order-pizza-api.herokuapp.com/api/orders`, requestOptions)
   return(
     <>
     <h3>PlaceOrder</h3>
-    <div className="d-grid gap-2">
-    <label for="pizza" >Crust:</label>
-      <select name="crust" onChange={onChangeCrust}>
-        <option value="STUFFED" >Stuffed</option>
-        <option value="CRACKER">Cracker</option>
-        <option value="THIN">Thin</option>
-      </select>
-      <label for="flavor" >Flavor:</label>
-      <select name="flavor" onChange={onChangeFlavor}>
-        <option value="FAJITA" >Fajita</option>
+    
+      <Card >
+      <div className='placeOrder' >
+      <Card.Body>
+     
+      <Card.Title >
+      <Form.Label   for="crust">Crust:</Form.Label>
+      <Form.Select name="crust" aria-label="Default select example" onChange={onChangeCrust}>
+      <option>Please Select</option>
+      <option value="THICK">Thick</option>
+      <option value="THIN">Thin</option>
+      <option value="STUFFED">Stuffed</option>
+      </Form.Select>
+      </Card.Title>
+      <Card.Title>
+      <Form.Label for="flavour">Flavour:</Form.Label>
+      <Form.Select name="flavour" aria-label="Default select example" onChange={onChangeFlavor}>
+      <option>Please Select</option>
+      <option value="FAJITA" >Fajita</option>
         <option value="CHEESE">Cheese</option>
         <option value="VEGGIE">Veggie</option>
-      </select>
-      <label for="size" >Size:</label>
-      <select name="size" onChange={onChangeSize}>
-        <option value="S" >Small</option>
+      </Form.Select>
+      </Card.Title>
+      <Card.Title>
+      <Form.Label for="size">Size:</Form.Label>
+      <Form.Select name="size" aria-label="Default select example" onChange={onChangeSize}>
+      <option>Please Select</option>
+      <option value="S" >Small</option>
         <option value="M">Medium</option>
         <option value="L">Large</option>
-      </select>
-      </div>
+      </Form.Select>
+     
+      </Card.Title>
+      
+     </Card.Body>
+     </div>
+</Card>
+
+      
+     
       <div className="d-grid gap-1">
       <Button  variant="danger" size="lg" onClick={handleClick}>Click here</Button>
       </div>
       </>
     
   )
-}
+  }
 export default PlaceOrder;
   
 
