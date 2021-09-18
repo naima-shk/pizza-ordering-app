@@ -67,7 +67,7 @@ fetch(`https://order-pizza-api.herokuapp.com/api/orders`, requestOptions)
      
       <Card.Title >
       <Form.Label   for="crust">Crust:</Form.Label>
-      <Form.Select name="crust" aria-label="Default select example" onChange={onChangeCrust}>
+      <Form.Select name="crust" aria-label="Default select example" onBlur={onChangeCrust}>
       <option>Please Select</option>
       <option value="THICK">Thick</option>
       <option value="THIN">Thin</option>
@@ -76,7 +76,7 @@ fetch(`https://order-pizza-api.herokuapp.com/api/orders`, requestOptions)
       </Card.Title>
       <Card.Title>
       <Form.Label for="flavour">Flavour:</Form.Label>
-      <Form.Select name="flavour" aria-label="Default select example" onChange={onChangeFlavor}>
+      <Form.Select name="flavour" aria-label="Default select example" onBlur={onChangeFlavor}>
       <option>Please Select</option>
       <option value="FAJITA" >Fajita</option>
         <option value="CHEESE">Cheese</option>
@@ -85,7 +85,7 @@ fetch(`https://order-pizza-api.herokuapp.com/api/orders`, requestOptions)
       </Card.Title>
       <Card.Title>
       <Form.Label for="size">Size:</Form.Label>
-      <Form.Select name="size" aria-label="Default select example" onChange={onChangeSize}>
+      <Form.Select name="size" aria-label="Default select example" onBlur={onChangeSize}>
       <option>Please Select</option>
       <option value="S" >Small</option>
         <option value="M">Medium</option>
