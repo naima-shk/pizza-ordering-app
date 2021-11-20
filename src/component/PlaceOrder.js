@@ -61,7 +61,7 @@ fetch(`https://order-pizza-api.herokuapp.com/api/orders`, requestOptions)
     <>
     <h3>PlaceOrder</h3>
     
-      <Card >
+      <Card  style={{ width: '18rem', marginLeft: '38rem'}} >
       <div className='placeOrder' >
       <Card.Body>
      

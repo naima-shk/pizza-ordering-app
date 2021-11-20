@@ -24,13 +24,13 @@ return(
 {pizzaData.map((item) =>(
   <div className="card-body">
     
-    <Card>
+    <Card  style={{ width: '18rem', marginLeft: '35rem', display:'flex' }}>
       <div  >
         
-        <h2 className='card-name'>Crust: {item.Crust} </h2>
-        <h2 className='card-type'>Flavour: {item.Flavour} </h2>
-        <h2 className='card-size'>Size: {item.Size} </h2>
-        <h2 className='card-Order'>Order_ID: {item.Order_ID} </h2>
+        <h3 className='card-name'>Crust: {item.Crust} </h3>
+        <h3 className='card-type'>Flavour: {item.Flavour} </h3>
+        <h3 className='card-size'>Size: {item.Size} </h3>
+        <h3 className='card-Order'>Order_ID: {item.Order_ID} </h3>
         
        
       </div>
